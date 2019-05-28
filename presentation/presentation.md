@@ -19,6 +19,8 @@ yellow  : gold              : #FFD700
 
 # [FIT] Welcome
 
+
+
 ---
 
 ```
@@ -62,16 +64,6 @@ yellow  : gold              : #FFD700
 
 ![](https://www.youtube.com/watch?v=loGxO3L7rFE&t=60s)
 
-
-
----
-
-# We did not invent this :)
-```
-```
-
-[.header: alignment(center)]
-![original](assets/stroopwafels.png)
 
 ---
 
@@ -144,8 +136,6 @@ yellow  : gold              : #FFD700
 ```
 ```
 
-[.code-highlight: 1-2]
-
 ```java
 Exception up = new Exception("Something is really wrong.");
 throw up;
@@ -162,10 +152,8 @@ throw up;
 ```
 ```
 
-[.code-highlight: 1-3]
-
 ```java
-Catch (Exception e) {
+catch (Exception e) {
  //who cares?
 }
 ```
@@ -372,8 +360,6 @@ int getRandomize(int randMax)
 * I will, **not knowingly allow code that is defective either in behavior or structure to accumulate**.
 * I will, **fearlessly and relentlessly improve my creations at every opportunity.**
 
-![right fit](assets/uncle-bob.png)
-
 [.background-color: #347C2C]
 [.header: #FFFFFF]
 [.text: #FFFFFF]
@@ -385,22 +371,6 @@ int getRandomize(int randMax)
 
 ---
 
-# Hygiene levels
-
-|                               |
-| ----------------------------- |
-| Application Code              |
-| Used Libraries / Dependencies |
-| Containers                    |
-| Deployment                    |
-
-[.background-color: #2554C7]
-[.header: #FFFFFF]
-[.text: #FFFFFF]
-[.table-separator: #FFFFFF] 
-
----
-
 # How to deploy and enforce hygiene?
 
 ---
@@ -408,6 +378,12 @@ int getRandomize(int randMax)
 # Compliance & Security Testing
 
 ### Validate, weather the system developed meets the organization’s prescribed standards or not.
+
+# [fit] Automate!
+
+[.background-color: #347C2C]
+[.header: #FFFFFF]
+[.text: #FFFFFF]
 
 ---
 
@@ -464,7 +440,10 @@ Ex.
 
 ---
 
-## SonarQube Pull Request Feedback
+# Pull Request Feedback
+
+```
+```
 ```
 ```
 ![original 110%](assets/sonarqube-gitlab-feedback.png)
@@ -582,7 +561,7 @@ jacocoTestReport {
 ```
 # Demo
 
-[CodeScene Clojure](https://codescene.io/projects/175)
+[CodeScene](https://codescene.io/projects/169)
 
 [.header: alignment(center)]
 [.text: alignment(center)]

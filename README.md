@@ -36,9 +36,12 @@ This will build the following images:
 * Show the simple test noted in goss.yaml
 * Run the test using `$ ./run-test.sh`
 * Modify the test by adding test usinng goss `$ ./edit-test.sh`
-* ```goss add file /app/application.jar
+
+    ```
+    goss add file /app/application.jar
     goss add service sshd
-    goss add service ftp```
+    goss add service ftp
+    ```
 
 ## Step 5: Inspec Testing
 
@@ -46,19 +49,20 @@ This will build the following images:
 * Create a simple test
     
     ```
-        file('/tmp').directory?
-        
-        describe file('/tmp') do
-            it { should be_directory }
-        }
+    file('/tmp').directory?
+    
+    describe file('/tmp') do
+        it { should exist }
+        it { should be_directory }
+    end
 
-        describe service('ssh') do 
-            it { should be_installed }
-        }
+    describe service('ssh') do
+        it { should be_installed }
+    end
 
-        describe port('80') do
-            it { should_not be_listening }
-        end
+    describe port('80') do
+        it { should_not be_listening }
+    end
     ```
     - `$ inspec exec simpletest.rb`
 * Run docker test using `inspec exec`
