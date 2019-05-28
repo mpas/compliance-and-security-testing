@@ -17,12 +17,6 @@ white   : white             : #000000
 yellow  : gold              : #FFD700
  -->
 
-# [FIT] Welcome
-
-
-
----
-
 ```
 ```
 ```
@@ -59,11 +53,6 @@ yellow  : gold              : #FFD700
 * Airfloss
 
 ![right, 80%](assets/philips-healthcare.jpg)
-
----
-
-![](https://www.youtube.com/watch?v=loGxO3L7rFE&t=60s)
-
 
 ---
 
