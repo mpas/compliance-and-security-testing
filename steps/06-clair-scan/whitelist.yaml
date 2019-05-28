@@ -1,0 +1,7 @@
+generalwhitelist:
+    CVE-2018-1000001: glibc
+    CVE-2018-6551: glibc
+    CVE-2019-9169: glibc
+    CVE-2018-6485: glibc
+    CVE-2016-2779: util-linux
+    CVE-2017-12424: shadow

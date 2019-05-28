@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  sonarqube:
+    image: sonarqube:7.7-community
+    ports:
+      - "9000:9000"
+    depends_on:
+      - db
+    environment:
+      - sonar.jdbc.url=jdbc:postgresql://db/sonarqube
+      - sonar.jdbc.username=sonar
+      - sonar.jdbc.password=sonar
+    volumes:
+      - ./extensions:/opt/sonarqube/extensions
+
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=sonar
+      - POSTGRES_PASSWORD=sonar
+      - POSTGRES_DB=sonarqube
+    volumes:
+      - $PWD/data:/opt/sonarqube/data
