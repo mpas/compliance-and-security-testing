@@ -464,6 +464,13 @@ Ex.
 
 ---
 
+## SonarQube Pull Request Feedback
+```
+```
+![original 110%](assets/sonarqube-gitlab-feedback.png)
+
+---
+
 # Quality Gates
 
 ```
